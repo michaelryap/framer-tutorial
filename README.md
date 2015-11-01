@@ -11,7 +11,7 @@ Coffescript, like many scripting languages, is built upon variables, conditions,
 ####Variables
 
 `// Javascript
-    number = 42;
+number = 42;
 // Coffescript
     number = 42`
 
