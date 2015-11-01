@@ -21,7 +21,7 @@ Coffescript, like many scripting languages, is built upon variables, conditions,
 // Javascript
 number = 42;
 
-// Coffescript
+# Coffescript
 number = 42
 ````
 
@@ -29,7 +29,7 @@ number = 42
 // Javascript
 opposite = true;
 
-// Coffeescript
+# Coffeescript
 opposite = true
 ````
 
@@ -41,7 +41,7 @@ if(opposite) {
     number = -42;
 }
 
-// Coffescript
+# Coffescript
 number = -42 if opposite
 ````
 
@@ -54,7 +54,7 @@ addressBook = {
     lastName: "Yap"
 };
 
-// Coffescript
+# Coffescript
 addressBook =
      firstName: "Michael"
     lastName: "Yap"
@@ -70,7 +70,7 @@ shoppingList = [
     bread
 ];
 
-// Coffeescript
+# Coffeescript
 shoppingList = [
     eggs,
     milk,
@@ -86,7 +86,7 @@ square = function(x) {
     return x * x;
 }
 
-// Coffeescript
+# Coffeescript
 square = (x) -> x * x
 ````
 
@@ -99,7 +99,7 @@ When you import a Sketch file into Framer, you'll see a new line similar to the 
 In the real world, objects have properties. For example, take a red balloon. The balloon is the object; color is one of its properties; color is set to red. In Javascript, we can access an object's properties using dot notation.
 
 ````
-// Access the the balloon's color and set it to blue
+# Access the the balloon's color and set it to blue
 balloon.color = "blue"
 ````
 
@@ -110,7 +110,7 @@ For example, say you've drawn three circles in Sketch and you wish to change the
 ![alt tag](docs/sketch-dot.png)
 
 ````
-// Access circles via dot notation and update its scale property
+# Access circles via dot notation and update its scale property
 example.circles.scale = 1.2
 ````
 ###Indentation
@@ -162,17 +162,18 @@ To make your Framer prototype interactive, you write actions (functions) that re
 Framer allows you to "listen" to many events: click events, touch events, scroll events, drag events and more.
 
 ````
-// Listen listen to when the user clicks upon a layer name "layerA"
+# Listen listen to when the user clicks upon a layer name "layerA"
 layerA.on Events.Click, ->
-    // Awesome code here
+    # Awesome code here
 ````
 
 One of the most comment uses of events toggling between a set of states on click
 
 ````
-// Toggle states on click
+# Toggle states on click
 menuButton.on Events.Click, ->
     menu.states.next()
+````
 
 ##Lab: Google Inbox
 
