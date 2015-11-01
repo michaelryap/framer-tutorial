@@ -216,10 +216,15 @@ inbox.fab.on Events.TouchEnd, ->
     inbox.fab.opacity = 1
 ````
 
+You may wonder what *.on*, *comma*, and *arrow(->)* notations are. But you can just think this is the way to assign an event to a layer. (For the curious, learn more about [.on](http://framerjs.com/docs/#layer.on) and [functions](http://framerjs.com/learn/coffeescript/).)
 
+*Step 7: Add a "print" command to confirm event listening is working
 
-
-
+````
+inbox.fab.on Events.TouchStart, ->
+    print "Click fired"
+    inbox.fab.opacity = 0
+````
 
 
 
