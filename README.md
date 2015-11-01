@@ -1,6 +1,6 @@
 # Framer Tutorial
 
-## Introduction
+##Introduction
 
 ###Coffeescript
 
@@ -10,10 +10,10 @@ Coffescript, like many scripting languages, is built upon variables, conditions,
 
 ####Variables
 
-//Javascript
+`// Javascript
 number = 42;
 // Coffescript
-number = 42
+number = 42`
 
 // Javascript
 opposite = true;
