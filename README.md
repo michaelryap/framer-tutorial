@@ -4,7 +4,7 @@
 
 Framer.js (Framer) is a prototyping tool that allows UX designers to create interactive animated prototypes.
 
-This lesson guide is adapted from [David Lee‘s](https://twitter.com/designforhuman) excellent Medium post entitled [“New to Framer?
+This lesson guide is adapted from [David Lee’s](https://twitter.com/designforhuman) excellent Medium post entitled [“New to Framer?
 Just 3 Things to Get You Started”](https://medium.com/@designforhuman/new-to-framer-just-3-things-to-get-you-started-47397f27c71e#.80jvxpgm0)
 
 ## Basic Concepts
