@@ -290,7 +290,16 @@ Here‘s what we‘re going to make…
 
 **Step 1: Write a program in psuedocode** 
 
-Hide the circular option buttons
+When the user presses the Floating Action Button rotate the plus icon:
+
+* Rotate the plus icon ninety degrees
+* Fade out the plus icon
+* Rotate the write icon ninety degrees
+* Fade in the plus icon
+* Fade in the overlay layer
+* Fade in the options layer
+
+When the user presses the overlay layer, reverse all corresponding animations
 
 **Step 2: Hide the `options`, `icon_write`, and `overlay` layers**
 
@@ -324,7 +333,7 @@ inbox.overlay.on Events.Click, ->
 ````
 **Step 5: Animate the plus and write icons**
 
-Set the write icon‘s default state by rotating it negative ninety degrees…
+Set the write icon's default state by rotating it negative ninety degrees…
 
 `inbox.icon_write.rotation = -90`
 
