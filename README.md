@@ -17,21 +17,24 @@ number = 42;
 number = 42
 ````
 
+````
 // Javascript
 opposite = true;
 // Coffeescript
 opposite = true
+````
 
 ####Conditions
 
+````
 // Javascript
-
 if(opposite) {
     number = -42;
 }
 
 // Coffescript
 number = -42 if opposite
+````
 
 ####Objects
 
