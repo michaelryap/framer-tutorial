@@ -162,7 +162,7 @@ To make your Framer prototype interactive, you write actions (functions) that re
 Framer allows you to "listen" to many events: click events, touch events, scroll events, drag events and more.
 
 ````
-# Listen listen to when the user clicks upon a layer name "layerA"
+# Listen to when the user clicks upon a layer name "layerA"
 layerA.on Events.Click, ->
     # Awesome code here
 ````
@@ -176,6 +176,10 @@ menuButton.on Events.Click, ->
 ````
 
 ##Lab: Google Inbox
+
+###Step 1: Create a new Framer document and import the Sketch file title "Inbox.sketch"
+
+![alt tag](docs/sketch-import.png)
 
 
 
