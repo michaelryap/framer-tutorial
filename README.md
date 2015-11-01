@@ -316,13 +316,13 @@ inbox.options.states.add
 inbox.options.states.animationOptions = curve: "spring(300, 30, 0)"
 ````
 
-**Step 4: Make `overlay` disappear when clicked
+**Step 4: Make `overlay` disappear when clicked**
 
 ````
 inbox.overlay.on Events.Click, ->
     this.states.switch("default")
 ````
-**Step 5: Animate the plus and write icons
+**Step 5: Animate the plus and write icons**
 
 Set the write icon‘s default state by rotating it negative ninety degrees…
 
