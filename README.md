@@ -288,6 +288,44 @@ Here‘s what we‘re going to do…
 
 ![alt tag](docs/inbox-animated.gif)
 
+**Step 1: Write a program in psuedocode** 
+
+Hide the circular option buttons
+
+**Step 2: Hide the `options`, `icon_write`, and `overlay` layers**
+
+````
+# This imports all the layers for "Inbox" into inboxLayers
+inbox = Framer.Importer.load "imported/Inbox"
+
+inbox.options.opacity = 0
+inbox.icon_write.opacity = 0
+inbox.overlay.opacity = 0
+````
+
+**Step 3: Define the states described in psuedocode**
+
+Create a state for `options` and `overlay` that display them 100% opaque…
+
+````
+# This imports all the layers for "Inbox" into inboxLayers
+inbox = Framer.Importer.load "imported/Inbox"
+
+inbox.options.opacity = 0
+inbox.icon_write.opacity = 0
+inbox.overlay.opacity = 0
+
+inbox.overlay.states.add
+    on:
+        opacity: 1
+inbox.overlay.states.animationOptions = curve: "spring(300, 30, 0)"
+        
+inbox.options.states.add
+    on: 
+        opacity: 1
+inbox.options.states.animationOptions = curve: "spring(300, 30, 0)"
+````
+
 
 
 
