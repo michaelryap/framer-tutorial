@@ -177,11 +177,17 @@ menuButton.on Events.Click, ->
 
 ##Lab: Google Inbox
 
-**Step 1: Create a new Framer document and import the Sketch file title "Inbox.sketch"**
+*Step 1: Open and inspect "Inbox.sketch".*
+
+Note how each layer is named. ("fab" is an acronym for "floating action button".) We'll use Sketch's naming convention in the dot notation we'll write in Framer to access each layer's properties.
+
+*Step 2: Create a new Framer document and import the Sketch file*
 
 ![alt tag](docs/sketch-import.png)
 
+*Step 3: Rename the default variable to "inbox"*
 
+Now you can access all layers in the Sketch file through the variable `inbox`.
 
-
+`inbox.fab.scale = 1.2`
 
