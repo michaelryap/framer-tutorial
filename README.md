@@ -284,7 +284,7 @@ David notes:
 
 ##Lab 2: Bringing Google Inbox to life
 
-Here‘s what we‘re going to do…
+Here‘s what we‘re going to make…
 
 ![alt tag](docs/inbox-animated.gif)
 
@@ -295,9 +295,6 @@ Hide the circular option buttons
 **Step 2: Hide the `options`, `icon_write`, and `overlay` layers**
 
 ````
-# This imports all the layers for "Inbox" into inboxLayers
-inbox = Framer.Importer.load "imported/Inbox"
-
 inbox.options.opacity = 0
 inbox.icon_write.opacity = 0
 inbox.overlay.opacity = 0
@@ -305,16 +302,9 @@ inbox.overlay.opacity = 0
 
 **Step 3: Define the states described in psuedocode**
 
-Create a state for `options` and `overlay` that display them 100% opaque…
+Create states for `options` and `overlay` that display them 100% opaque…
 
 ````
-# This imports all the layers for "Inbox" into inboxLayers
-inbox = Framer.Importer.load "imported/Inbox"
-
-inbox.options.opacity = 0
-inbox.icon_write.opacity = 0
-inbox.overlay.opacity = 0
-
 inbox.overlay.states.add
     on:
         opacity: 1
@@ -326,13 +316,111 @@ inbox.options.states.add
 inbox.options.states.animationOptions = curve: "spring(300, 30, 0)"
 ````
 
+**Step 4: Make `overlay` disappear when clicked
 
+````
+inbox.overlay.on Events.Click, ->
+    this.states.switch("default")
+````
+**Step 5: Animate the plus and write icons
 
+Set the write icon‘s default state by rotating it negative ninety degrees…
 
+`inbox.icon_write.rotation = -90`
 
+Describe a state for the write icon when the FAB is clicked…
 
+````
+#Write Icon States
+inbox.icon_write.states.add
+    on: 
+        rotation: 0
+        opacity: 1
+inbox.icon_write.states.animationOptions = curve: "spring(500, 30, 0)"
+````
 
+Describe a state for when the plus icon is clicked…
 
+````
+#Plus Icon States
+inbox.icon_plus.states.add 
+    on:
+        rotation: 90
+        opacity: 0
+inbox.icon_plus.states.animationOptions = curve: "spring(500, 30, 0)"
+````
+
+Update the click events…
+
+````
+#FAB Events
+inbox.fab.on Events.Click, ->
+    # print "I fired"
+    inbox.overlay.states.switch("on")
+    inbox.options.states.switch("on")
+    inbox.icon_write.states.switch("on")
+    inbox.icon_plus.states.switch("on")
+
+#Overlay Events
+inbox.overlay.on Events.Click, ->
+    this.states.switch("default")
+    inbox.options.states.switch("default")
+    inbox.icon_write.states.switch("default")
+    inbox.icon_plus.states.switch("default")
+````
+
+**Finished code**
+
+````
+# This imports all the layers for "Inbox" into inbox
+inbox = Framer.Importer.load "imported/Inbox"
+
+inbox.options.opacity = 0
+inbox.icon_write.opacity = 0
+inbox.icon_write.rotation = -90
+inbox.overlay.opacity = 0
+
+#Options States
+inbox.options.states.add
+    on: 
+        opacity: 1
+inbox.options.states.animationOptions = curve: "spring(300, 30, 0)"
+
+# Overlay States
+inbox.overlay.states.add
+    on:
+        opacity: 1
+inbox.overlay.states.animationOptions = curve: "spring(300, 30, 0)"
+
+#Plus Icon States
+inbox.icon_plus.states.add 
+    on:
+        rotation: 90
+        opacity: 0
+inbox.icon_plus.states.animationOptions = curve: "spring(500, 30, 0)"
+
+#Write Icon States
+inbox.icon_write.states.add
+    on: 
+        rotation: 0
+        opacity: 1
+inbox.icon_write.states.animationOptions = curve: "spring(500, 30, 0)"
+
+#FAB Events
+inbox.fab.on Events.Click, ->
+    # print "I fired"
+    inbox.overlay.states.switch("on")
+    inbox.options.states.switch("on")
+    inbox.icon_write.states.switch("on")
+    inbox.icon_plus.states.switch("on")
+
+#Overlay Events
+inbox.overlay.on Events.Click, ->
+    this.states.switch("default")
+    inbox.options.states.switch("default")
+    inbox.icon_write.states.switch("default")
+    inbox.icon_plus.states.switch("default")
+````
 
 
 
