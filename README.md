@@ -87,4 +87,6 @@ square = function(x) {
 square = (x) -> x * x
 ````
 
+###Dot Notation
+
 
