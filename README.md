@@ -10,10 +10,10 @@ Coffescript, like many scripting languages, is built upon variables, conditions,
 
 ####Variables
 
-`// Javascript 
-number = 42;`
-// Coffescript
-number = 42
+`// Javascript`
+`number = 42;`
+`// Coffescript`
+`number = 42`
 
 // Javascript
 opposite = true;
