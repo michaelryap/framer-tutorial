@@ -100,10 +100,12 @@ In the real world, objects have properties. For example, take a red balloon. The
 
 ````
 // Access the the balloon's color and set it to blue
-// balloon.color = "blue"
+balloon.color = "blue"
 ````
 
 To access and change properties of objects drawn in Sketch we can use dot notation to access nested objects.
+
+For example, say you've drawn three circles in Sketch and you wish to change their size in Framer.
 
 ![alt tag](docs/sketch-dot.png)
 
@@ -111,10 +113,25 @@ To access and change properties of objects drawn in Sketch we can use dot notati
 // Access circles via dot notation and update its scale property
 example.circles.scale = 1.2
 ````
+###Indentation
 
+Just as dots are significant in Framer, so too are indents.
 
+Levels of indentation indicate parent-child relationships.
 
+````
+function = ->
+    layer.animate
+        properties:
+           opacity: 1
+           rotation: 90
+````
 
+`opacity` and `rotation` are children of `properties`.
+
+`properties` is a child of `layer.animate`.
+
+`layer.animate` is a child of `function`.
 
 
 
