@@ -13,6 +13,7 @@ Coffescript, like many scripting languages, is built upon variables, conditions,
 ````
 // Javascript
 number = 42;
+
 // Coffescript
 number = 42
 ````
@@ -20,6 +21,7 @@ number = 42
 ````
 // Javascript
 opposite = true;
+
 // Coffeescript
 opposite = true
 ````
@@ -38,6 +40,7 @@ number = -42 if opposite
 
 ####Objects
 
+````
 // Javascript
 addressBook = {
     firstName: "Michael",
@@ -48,11 +51,12 @@ addressBook = {
 addressBook =
      firstName: "Michael"
     lastName: "Yap"
+````
 
 ####Arrays
 
+````
 // Javascript
-
 shoppingList = [
     eggs,
     milk,
@@ -60,19 +64,23 @@ shoppingList = [
 ];
 
 // Coffeescript
-
 shoppingList = [
     eggs,
     milk,
     bread
 ]
+````
 
 ####Functions
 
+````
+// Javascript
 square = function(x) {
     return x * x;
 }
 
+// Coffeescript
 square = (x) -> x * x
+````
 
 
