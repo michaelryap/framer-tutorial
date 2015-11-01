@@ -185,7 +185,7 @@ menuButton.on Events.Click, ->
     menu.states.next()
 ````
 
-##Lab: Google Inbox
+##Lab 1: Messing around with Google Inbox
 
 **Step 1: Open and inspect "Inbox.sketch"**
 
@@ -282,8 +282,11 @@ David notes:
 
 >There are some ways to define the type of animations. But *spring* gives the most natural results. So most of the time you use *spring* instead of *linear* or *ease*. The three values inside the parentheses are [tension, friction, and velocity](http://nlevin.com/framer/#26) in order. I mostly find right animation by adjusting *tension* and *friction* leaving *velocity* as 0. I just start with “300, 30, 0” then change them later. You can play with them in Noah Levin’s [tutorial page](http://nlevin.com/framer/#27).
 
+##Lab 2: Bringing Google Inbox to life
 
+Here‘s what we‘re going to do…
 
+![alt tag](docs/inbox-animated.gif)
 
 
 
