@@ -89,4 +89,4 @@ square = (x) -> x * x
 
 ###Dot Notation
 
-
+![alt tag](docs/sketch-dot.png)
