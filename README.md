@@ -177,7 +177,7 @@ menuButton.on Events.Click, ->
 
 ##Lab: Google Inbox
 
-###Step 1: Create a new Framer document and import the Sketch file title "Inbox.sketch"
+**Step 1: Create a new Framer document and import the Sketch file title "Inbox.sketch"**
 
 ![alt tag](docs/sketch-import.png)
 
