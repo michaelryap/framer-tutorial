@@ -13,9 +13,11 @@ Just 3 Things to Get You Started”](https://medium.com/@designforhuman/new-to-f
 
 Framer is built upon Coffeescript, which is a simpler way of writing Javascript.
 
-Coffescript, like many scripting languages, is built upon variables, conditions, functions, arrays, objects.
+Coffescript, like many scripting languages, is built upon variables, conditions, functions, arrays, and objects.
 
 ####Variables
+
+*Cara to add definition*
 
 ````
 // Javascript
@@ -35,6 +37,8 @@ opposite = true
 
 ####Conditions
 
+*Cara to add definition*
+
 ````
 // Javascript
 if(opposite) {
@@ -46,6 +50,8 @@ number = -42 if opposite
 ````
 
 ####Objects
+
+*Cara to add definition*
 
 ````
 // Javascript
@@ -61,6 +67,8 @@ addressBook =
 ````
 
 ####Arrays
+
+*Cara to add definition*
 
 ````
 // Javascript
@@ -79,6 +87,8 @@ shoppingList = [
 ````
 
 ####Functions
+
+*Cara to add definition*
 
 ````
 // Javascript
@@ -201,11 +211,14 @@ Let's describe the program in terms of property values that Framer will understa
 
 **Step 5: Translate the psuedocode to actual code**
 
+First, listen for when users click on the FAB…
+
 ````
 inbox.fab.on Events.Click, ->
     # Confirm event listening is working properly
     print "Click fired"
 ````
+Second, assign an action…
 
 ````
 inbox.fab.on Events.Click, ->
@@ -223,7 +236,11 @@ inbox.fab.on Events.TouchEnd, ->
     inbox.fab.opacity = 1
 ````
 
-You may wonder what *.on*, *comma*, and *arrow(->)* notations are. But you can just think this is the way to assign an event to a layer. (For the curious, learn more about [.on](http://framerjs.com/docs/#layer.on) and [functions](http://framerjs.com/learn/coffeescript/).)
+David notes:
+
+>You may wonder what *.on*, *comma*, and *arrow(->)* notations are. But you can just think this is the way to assign an event to a layer. 
+
+(For the curious, learn more about [.on](http://framerjs.com/docs/#layer.on) and [functions](http://framerjs.com/learn/coffeescript/).)
 
 **Step 7: Describe alternative states**
 
@@ -231,7 +248,7 @@ Think back to walking in the woods. The branch that is in your path has an state
 
 Prototyping in Framer can be thought of assigning layers different states based upon how users interact with them.
 
-Another way to think of it is: when users act upon a layer, users change the layer's state.
+Another way to think of it: when users act upon a layer, users change the layer’s state.
 
 For Framer to keep track of how layers change from state-to-state, we must define them.
 
@@ -253,13 +270,17 @@ inbox.fab.on Events.TouchEnd, ->
     
 **Step 8: Modify how the FAB animates between states**
 
-When creating motion studies with Keynote, UX designers often rely on Keynote's "Magic Move" functionality.
+When creating motion studies with Keynote, UX designers often rely on Keynote’s “Magic Move” functionality.
 
-One one hand, Magic Move is great—we are able to quickly able sketch change over time. On the other hand, we don't have the ability to control *how* Keynote animates objects from one state to another.
+One one hand, Magic Move is great—we are quickly able to sketch change over time. On the other hand, we don’t have the ability to control *how* Keynote animates objects from one state to another.
 
 Fortunately, Framer gives us fine control of animation effects via `.animationOptions`.
 
+`inbox.fab.states.animationOptions = curve: "spring(300, 30, 0)"`
 
+David notes:
+
+>There are some ways to define the type of animations. But *spring* gives the most natural results. So most of the time you use *spring* instead of *linear* or *ease*. The three values inside the parentheses are [tension, friction, and velocity](http://nlevin.com/framer/#26) in order. I mostly find right animation by adjusting *tension* and *friction* leaving *velocity* as 0. I just start with “300, 30, 0” then change them later. You can play with them in Noah Levin’s [tutorial page](http://nlevin.com/framer/#27).
 
 
 
