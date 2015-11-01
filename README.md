@@ -106,7 +106,7 @@ When you import a Sketch file into Framer, you'll see a new line similar to the 
 
 `example = Framer.Importer.load “imported/example”`
 
-In the real world, objects have properties. For example, take a red balloon. The balloon is the object; color is one of its properties; color is set to red. In Javascript, we can access an object's properties using dot notation.
+In the real world, objects have properties. For example, imagine a red balloon. A balloon is an object; color is one of its many properties; this balloon’s color property is red. In Javascript, we can access an object's properties using dot notation.
 
 ````
 # Access the the balloon's color and set it to blue
