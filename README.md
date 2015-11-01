@@ -2,6 +2,10 @@
 
 ##Introduction
 
+Framer.js is a prototyping tool that allows UX designers to create interactive, animated prototypes.
+
+## Basic Concepts
+
 ###Coffeescript
 
 Framer uses Coffeescript, which is a simpler way of writing Javascript.
