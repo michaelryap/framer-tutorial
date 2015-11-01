@@ -177,29 +177,29 @@ menuButton.on Events.Click, ->
 
 ##Lab: Google Inbox
 
-*Step 1: Open and inspect "Inbox.sketch"*
+**Step 1: Open and inspect "Inbox.sketch"**
 
 ![alt tag](docs/sketch-layers.png)
 
 Note how each layer is named. ("fab" is an acronym for "floating action button".) We'll use Sketch's naming convention in the dot notation we'll write in Framer to access each layer's properties.
 
-*Step 2: Create a new Framer document and import the Sketch file*
+**Step 2: Create a new Framer document and import the Sketch file**
 
 ![alt tag](docs/sketch-import.png)
 
-*Step 3: Rename the default variable to "inbox"*
+**Step 3: Rename the default variable to "inbox"**
 
 Now you can access all layers in the Sketch file through the variable `inbox`.
 
 `inbox.fab.scale = 1.2`
 
-*Step 4: Write a program in psuedocode*
+**Step 4: Write a program in psuedocode**
 
 Let's describe a simple program in human language: when the user clicks on the Floating Action Button (FAB), make it disappear.
 
 Let's describe the program in terms of property values that Framer will understand: when the user clicks on the FAB, set the FAB's opacity to zero.
 
-*Step 5: Translate the psuedocode to actual code*
+**Step 5: Translate the psuedocode to actual code**
 
 ````
 inbox.fab.on Events.Click, ->
@@ -213,7 +213,7 @@ inbox.fab.on Events.Click, ->
     inbox.fab.opacity = 0
 ````
 
-*Step 6: Divide the click event into two events: press and release*
+**Step 6: Divide the click event into two events: press and release**
 
 ````
 inbox.fab.on Events.TouchStart, ->
@@ -225,7 +225,7 @@ inbox.fab.on Events.TouchEnd, ->
 
 You may wonder what *.on*, *comma*, and *arrow(->)* notations are. But you can just think this is the way to assign an event to a layer. (For the curious, learn more about [.on](http://framerjs.com/docs/#layer.on) and [functions](http://framerjs.com/learn/coffeescript/).)
 
-*Step 7: Describe alternative states*
+**Step 7: Describe alternative states**
 
 Think back to walking in the woods. The branch that is in your path has an state prior to you brushing it aside (unbent) and a state after you've brushed it aside (bent).
 
@@ -251,7 +251,7 @@ inbox.fab.on Events.TouchEnd, ->
     this.states.switch("default")
 ````
     
-*Step 7: Modify how the FAB animates between states*
+**Step 8: Modify how the FAB animates between states**
 
 When creating motion studies with Keynote, UX designers often rely on Keynote's "Magic Move" functionality.
 
