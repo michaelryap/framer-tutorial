@@ -177,7 +177,9 @@ menuButton.on Events.Click, ->
 
 ##Lab: Google Inbox
 
-*Step 1: Open and inspect "Inbox.sketch".*
+*Step 1: Open and inspect "Inbox.sketch"*
+
+![alt tag](docs/sketch-layers.png)
 
 Note how each layer is named. ("fab" is an acronym for "floating action button".) We'll use Sketch's naming convention in the dot notation we'll write in Framer to access each layer's properties.
 
@@ -190,4 +192,64 @@ Note how each layer is named. ("fab" is an acronym for "floating action button".
 Now you can access all layers in the Sketch file through the variable `inbox`.
 
 `inbox.fab.scale = 1.2`
+
+*Step 4: Write a program in psuedocode*
+
+Let's describe a simple program in human language: when the user clicks on the floating action button (fab), make it disappear.
+
+Let's describe the program in terms of property values that Framer will understand: when the user clicks on the fab, set the fab's opacity to zero.
+
+*Step 5: Translate the psuedocode to actual code*
+
+````
+inbox.fab.on Events.Click, ->
+    inbox.fab.opacity = 0
+````
+
+*Step 6: Divide the click event into two events: press and release*
+
+````
+inbox.fab.on Events.TouchStart, ->
+    inbox.fab.opacity = 0
+
+inbox.fab.on Events.TouchEnd, ->
+    inbox.fab.opacity = 1
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
