@@ -62,7 +62,7 @@ addressBook = {
 
 # Coffescript
 addressBook =
-     firstName: "Michael"
+    firstName: "Michael"
     lastName: "Yap"
 ````
 
