@@ -301,8 +301,6 @@ When the user presses the Floating Action Button rotate the plus icon:
 
 When the user presses the overlay layer, reverse all corresponding animations.
 
-Let's do this!
-
 **Step 2: Hide the `options`, `icon_write`, and `overlay` layers**
 
 ````
