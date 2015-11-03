@@ -13,7 +13,9 @@ Just 3 Things to Get You Started”](https://medium.com/@designforhuman/new-to-f
 
 Framer is built upon Coffeescript, which is a simpler way of writing Javascript.
 
-Coffescript, like many scripting languages, is built upon variables, conditions, functions, arrays, and objects.
+![alt tag](docs/progressive-enhancement.png)
+
+Coffescript, like many scripting languages, makes use of variables, conditions, functions, arrays, and objects.
 
 ####Variables
 
