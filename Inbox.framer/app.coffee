@@ -35,10 +35,10 @@ inbox.icon_write.states.animationOptions = curve: "spring(500, 30, 0)"
 #FAB Events
 inbox.fab.on Events.Click, ->
 	# print "I fired"
-	inbox.overlay.states.switch("on")
-	inbox.options.states.switch("on")
-	inbox.icon_write.states.switch("on")
-	inbox.icon_plus.states.switch("on")
+	inbox.overlay.states.next()
+	inbox.options.states.next()
+	inbox.icon_write.states.next()
+	inbox.icon_plus.states.next()
 
 #Overlay Events
 inbox.overlay.on Events.Click, ->
