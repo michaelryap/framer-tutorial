@@ -4,7 +4,7 @@
 
 Framer.js (Framer) is a prototyping tool that allows UX designers to create interactive animated prototypes.
 
-This lesson guide is adapted from [David Lee‘s](https://twitter.com/designforhuman) excellent Medium post entitled [“New to Framer?
+This lesson guide is adapted from [David Lee’s](https://twitter.com/designforhuman) excellent Medium post entitled [“New to Framer?
 Just 3 Things to Get You Started”](https://medium.com/@designforhuman/new-to-framer-just-3-things-to-get-you-started-47397f27c71e#.80jvxpgm0)
 
 ## Basic Concepts
@@ -62,7 +62,7 @@ addressBook = {
 
 # Coffescript
 addressBook =
-     firstName: "Michael"
+    firstName: "Michael"
     lastName: "Yap"
 ````
 
@@ -106,7 +106,7 @@ When you import a Sketch file into Framer, you'll see a new line similar to the 
 
 `example = Framer.Importer.load “imported/example”`
 
-In the real world, objects have properties. For example, take a red balloon. The balloon is the object; color is one of its properties; color is set to red. In Javascript, we can access an object's properties using dot notation.
+In the real world, objects have properties. For example, imagine a red balloon. A balloon is an object; color is one of its many properties; this balloon’s color property is red. In Javascript, we can access an object's properties using dot notation.
 
 ````
 # Access the the balloon's color and set it to blue
@@ -300,8 +300,6 @@ When the user presses the Floating Action Button rotate the plus icon:
 * Fade in the options layer
 
 When the user presses the overlay layer, reverse all corresponding animations.
-
-Let's do this!
 
 **Step 2: Hide the `options`, `icon_write`, and `overlay` layers**
 
